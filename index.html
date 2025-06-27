@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Portfolio - Nandhakumar Sekar</title>
+    <title>Nandhakumar Sekar - Web Developer Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -14,7 +13,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="index.html">
                 <div class="logo-3d">NS</div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,445 +21,209 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section-full">
-        <div class="parallax-bg"></div>
-        <div class="quantum-particles"></div>
-        <div class="container h-100 d-flex align-items-center justify-content-center">
-            <div class="text-center">
-                <div class="holographic-card">
-                    <div class="floating-logo">
-                        <div class="logo-3d-main">NS</div>
+    <!-- Home Section with 3D Robot -->
+    <section id="home" class="home-section">
+        <!-- 3D Background -->
+        <div class="space-background">
+            <div class="stars"></div>
+            <div class="floating-particles"></div>
+        </div>
+
+        <!-- Interactive 3D Robot -->
+        <div class="robot-container" id="robotContainer">
+            <div class="robot-body">
+                <!-- Robot Head -->
+                <div class="robot-head">
+                    <div class="robot-antenna">
+                        <div class="antenna-ball"></div>
                     </div>
-                    <h1 class="holographic-text mb-4">
-                        <span class="typing-text">Nandhakumar Sekar</span>
-                    </h1>
-                    <p class="lead holographic-subtitle">Full Stack Developer & AI Tools Developer</p>
-                    <div class="neon-buttons mt-4">
-                        <button class="btn neon-btn primary" onclick="scrollToSection('about')">
-                            <span>Explore My Work</span>
-                        </button>
-                        <button class="btn neon-btn secondary ms-3" onclick="scrollToSection('contact')">
-                            <span>Get In Touch</span>
-                        </button>
+                    <div class="robot-eyes">
+                        <div class="eye left-eye">
+                            <div class="pupil"></div>
+                        </div>
+                        <div class="eye right-eye">
+                            <div class="pupil"></div>
+                        </div>
+                    </div>
+                    <div class="robot-mouth">
+                        <div class="mouth-line"></div>
+                    </div>
+                </div>
+
+                <!-- Robot Torso -->
+                <div class="robot-torso">
+                    <div class="chest-panel">
+                        <div class="power-button" id="powerButton"></div>
+                        <div class="status-lights">
+                            <div class="status-light red"></div>
+                            <div class="status-light yellow"></div>
+                            <div class="status-light green active"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robot Arms -->
+                <div class="robot-arms">
+                    <div class="arm left-arm">
+                        <div class="upper-arm"></div>
+                        <div class="lower-arm"></div>
+                        <div class="hand"></div>
+                    </div>
+                    <div class="arm right-arm">
+                        <div class="upper-arm"></div>
+                        <div class="lower-arm"></div>
+                        <div class="hand"></div>
+                    </div>
+                </div>
+
+                <!-- Robot Legs -->
+                <div class="robot-legs">
+                    <div class="leg left-leg">
+                        <div class="upper-leg"></div>
+                        <div class="lower-leg"></div>
+                        <div class="foot"></div>
+                    </div>
+                    <div class="leg right-leg">
+                        <div class="upper-leg"></div>
+                        <div class="lower-leg"></div>
+                        <div class="foot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Robot Speech Bubble -->
+            <div class="speech-bubble" id="speechBubble">
+                <div class="bubble-content">
+                    <p id="robotMessage">Hi! I'm NS Bot. Click me to interact!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="home-content">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="hero-text">
+                            <div class="greeting-animation">
+                                <span class="wave-emoji">👋</span>
+                                <span class="greeting-text">Hello, I'm</span>
+                            </div>
+                            <h1 class="hero-name">
+                                <span class="name-part">Nandhakumar</span>
+                                <span class="name-part">Sekar</span>
+                            </h1>
+                            <div class="hero-title">
+                                <span class="typing-text" id="typingText"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                            <p class="hero-description">
+                                Passionate Web Developer from Dharmapuri, India. 
+                                Creating innovative digital experiences with cutting-edge technologies.
+                            </p>
+                            
+                            <!-- Action Buttons -->
+                            <div class="hero-buttons">
+                                <a href="projects.html" class="btn hero-btn primary">
+                                    <span>View My Work</span>
+                                    <div class="btn-glow"></div>
+                                </a>
+                                <a href="contact.html" class="btn hero-btn secondary">
+                                    <span>Let's Connect</span>
+                                    <div class="btn-glow"></div>
+                                </a>
+                            </div>
+
+                            <!-- Social Links -->
+                            <div class="hero-social">
+                                <a href="https://www.linkedin.com/in/nandhakumar-sekar-309296252/" target="_blank" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/nandhakumarsekar2004/" target="_blank" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:nandhusekar2602@gmail.com" class="social-link">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="tel:+919786220194" class="social-link">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="hero-visual">
+                            <!-- Floating Code Elements -->
+                            <div class="floating-code">
+                                <div class="code-snippet" style="--delay: 0s;">
+                                    <span class="code-tag">&lt;html&gt;</span>
+                                </div>
+                                <div class="code-snippet" style="--delay: 1s;">
+                                    <span class="code-function">function()</span>
+                                </div>
+                                <div class="code-snippet" style="--delay: 2s;">
+                                    <span class="code-variable">const dev</span>
+                                </div>
+                                <div class="code-snippet" style="--delay: 3s;">
+                                    <span class="code-string">"creative"</span>
+                                </div>
+                            </div>
+
+                            <!-- Tech Stack Orbits -->
+                            <div class="tech-orbits">
+                                <div class="orbit orbit-1">
+                                    <div class="tech-icon" data-tech="HTML5">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                </div>
+                                <div class="orbit orbit-2">
+                                    <div class="tech-icon" data-tech="CSS3">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="orbit orbit-3">
+                                    <div class="tech-icon" data-tech="JavaScript">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                </div>
+                                <div class="orbit orbit-4">
+                                    <div class="tech-icon" data-tech="PHP">
+                                        <i class="fab fa-php"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Scroll Indicator -->
         <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section-full">
-        <div class="neural-bg"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="liquid-avatar">
-                        <img src="/placeholder.svg?height=400&width=400" alt="Profile" class="img-fluid">
-                        <div class="avatar-particles"></div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <h2 class="section-title">About Me</h2>
-                        <div class="dna-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h4>Creative Developer</h4>
-                                    <p class="breathing-text">Passionate about creating immersive digital experiences with cutting-edge technologies.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h4>Innovation Enthusiast</h4>
-                                    <p class="breathing-text">Always exploring new frontiers in web development and user experience design.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h4>Problem Solver</h4>
-                                    <p class="breathing-text">Dedicated to solving complex challenges through elegant and efficient solutions.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="holographic-badges mt-4">
-                            <div class="badge-3d">5+ Years Experience</div>
-                            <div class="badge-3d">50+ Projects</div>
-                            <div class="badge-3d">100% Client Satisfaction</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section-full">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">My Projects</h2>
-            <div class="quantum-grid">
-                <div class="project-card" data-tilt>
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Project 1">
-                        <div class="project-overlay">
-                            <div class="project-particles"></div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h4>E-Commerce Platform</h4>
-                        <p>Modern e-commerce solution with advanced features</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-tilt>
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Project 2">
-                        <div class="project-overlay">
-                            <div class="project-particles"></div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h4>AI Dashboard</h4>
-                        <p>Intelligent analytics dashboard with ML integration</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Vue.js</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-tilt>
-                    <div class="project-image">
-                        <img src="/placeholder.svg?height=300&width=400" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-particles"></div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h4>Mobile App</h4>
-                        <p>Cross-platform mobile application</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redux</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section-full">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Skills</h2>
-            <div class="orbital-system">
-                <div class="skill-core">
-                    <div class="core-text">Skills</div>
-                </div>
-                <div class="skill-orbit orbit-1">
-                    <div class="skill-planet" data-skill="JavaScript">JS</div>
-                </div>
-                <div class="skill-orbit orbit-2">
-                    <div class="skill-planet" data-skill="React">React</div>
-                </div>
-                <div class="skill-orbit orbit-3">
-                    <div class="skill-planet" data-skill="Node.js">Node</div>
-                </div>
-                <div class="skill-orbit orbit-4">
-                    <div class="skill-planet" data-skill="Python">Py</div>
-                </div>
-                <div class="skill-orbit orbit-5">
-                    <div class="skill-planet" data-skill="MongoDB">DB</div>
-                </div>
-            </div>
-            
-            <div class="neon-skill-bars mt-5">
-                <div class="skill-bar">
-                    <div class="skill-label">Frontend Development</div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-width="95%"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-label">Backend Development</div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-width="90%"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-label">UI/UX Design</div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-width="85%"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-label">Mobile Development</div>
-                    <div class="skill-progress">
-                        <div class="skill-fill" data-width="80%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="section-full">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Resume</h2>
-            <div class="resume-3d-container">
-                <div class="resume-flip-card">
-                    <div class="resume-card-inner">
-                        <div class="resume-card-front">
-                            <h3>Education</h3>
-                            <div class="resume-item">
-                                <h4>Master of Computer Science</h4>
-                                <p>University of Technology (2018-2020)</p>
-                                <div class="holographic-overlay"></div>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Bachelor of Software Engineering</h4>
-                                <p>Tech Institute (2014-2018)</p>
-                                <div class="holographic-overlay"></div>
-                            </div>
-                        </div>
-                        <div class="resume-card-back">
-                            <h3>Certifications</h3>
-                            <div class="resume-item">
-                                <h4>AWS Certified Developer</h4>
-                                <p>Amazon Web Services (2021)</p>
-                            </div>
-                            <div class="resume-item">
-                                <h4>Google Cloud Professional</h4>
-                                <p>Google Cloud Platform (2020)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="animated-timeline">
-                    <div class="timeline-line"></div>
-                    <div class="timeline-marker active" data-year="2020">
-                        <div class="marker-content">Started Career</div>
-                    </div>
-                    <div class="timeline-marker" data-year="2021">
-                        <div class="marker-content">Senior Developer</div>
-                    </div>
-                    <div class="timeline-marker" data-year="2023">
-                        <div class="marker-content">Lead Developer</div>
-                    </div>
-                </div>
-                
-                <button class="btn neon-btn download-btn" id="downloadBtn">
-                    <span>Download Resume</span>
-                    <div class="glitch-overlay"></div>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section-full">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Services</h2>
-            <div class="service-wheel">
-                <div class="service-center">
-                    <div class="service-icon-3d">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                </div>
-                <div class="service-item" data-service="web">
-                    <div class="service-card liquid-card">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4>Web Development</h4>
-                        <p>Custom web applications with modern technologies</p>
-                        <div class="neon-highlight"></div>
-                    </div>
-                </div>
-                <div class="service-item" data-service="mobile">
-                    <div class="service-card liquid-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4>Mobile Apps</h4>
-                        <p>Cross-platform mobile applications</p>
-                        <div class="neon-highlight"></div>
-                    </div>
-                </div>
-                <div class="service-item" data-service="design">
-                    <div class="service-card liquid-card">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h4>UI/UX Design</h4>
-                        <p>Beautiful and intuitive user interfaces</p>
-                        <div class="neon-highlight"></div>
-                    </div>
-                </div>
-                <div class="service-item" data-service="consulting">
-                    <div class="service-card liquid-card">
-                        <div class="service-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4>Consulting</h4>
-                        <p>Technical consulting and architecture</p>
-                        <div class="neon-highlight"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section-full">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Experience</h2>
-            <div class="experience-3d-timeline">
-                <div class="experience-cube">
-                    <div class="cube-face front">
-                        <h4>Senior Developer</h4>
-                        <p>Tech Corp (2021-Present)</p>
-                        <ul>
-                            <li>Led development of enterprise applications</li>
-                            <li>Mentored junior developers</li>
-                            <li>Implemented CI/CD pipelines</li>
-                        </ul>
-                    </div>
-                    <div class="cube-face back">
-                        <h4>Full Stack Developer</h4>
-                        <p>StartupXYZ (2020-2021)</p>
-                        <ul>
-                            <li>Built scalable web applications</li>
-                            <li>Designed RESTful APIs</li>
-                            <li>Optimized database performance</li>
-                        </ul>
-                    </div>
-                    <div class="cube-face right">
-                        <h4>Frontend Developer</h4>
-                        <p>Digital Agency (2019-2020)</p>
-                        <ul>
-                            <li>Created responsive websites</li>
-                            <li>Implemented modern UI frameworks</li>
-                            <li>Collaborated with design teams</li>
-                        </ul>
-                    </div>
-                    <div class="cube-face left">
-                        <h4>Junior Developer</h4>
-                        <p>Web Solutions (2018-2019)</p>
-                        <ul>
-                            <li>Developed web components</li>
-                            <li>Fixed bugs and issues</li>
-                            <li>Learned industry best practices</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="holographic-map mt-5">
-                <div class="map-marker" data-location="New York">
-                    <div class="marker-pulse"></div>
-                    <div class="marker-info">Tech Corp - NY</div>
-                </div>
-                <div class="map-marker" data-location="San Francisco">
-                    <div class="marker-pulse"></div>
-                    <div class="marker-info">StartupXYZ - SF</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-full">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Contact Me</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="contact-form-3d">
-                        <form id="contactForm">
-                            <div class="floating-input-group">
-                                <input type="text" id="name" required>
-                                <label for="name">Name</label>
-                                <div class="holographic-border"></div>
-                            </div>
-                            <div class="floating-input-group">
-                                <input type="email" id="email" required>
-                                <label for="email">Email</label>
-                                <div class="holographic-border"></div>
-                            </div>
-                            <div class="floating-input-group">
-                                <textarea id="message" rows="5" required></textarea>
-                                <label for="message">Message</label>
-                                <div class="holographic-border"></div>
-                            </div>
-                            <button type="submit" class="btn liquid-submit-btn">
-                                <span>Send Message</span>
-                                <div class="liquid-fill"></div>
-                            </button>
-                        </form>
-                        
-                        <div class="contact-envelope">
-                            <div class="envelope-body"></div>
-                            <div class="envelope-flap"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="social-icons-neon mt-5 text-center">
-                <a href="#" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-        
-        <div class="thank-you-message" id="thankYouMessage">
-            <div class="holographic-thanks">
-                <h3>Thank You!</h3>
-                <p>Your message has been sent successfully.</p>
+            <div class="scroll-text">Explore More</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
