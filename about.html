@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Nandhakumar Sekar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-3d">NS</div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section-full">
+        <div class="neural-bg"></div>
+        <div class="container">
+            <h2 class="section-title text-center mb-5">About Me</h2>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="rotating-card" onclick="rotateCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="liquid-avatar">
+                                    <img src="/placeholder.svg?height=500&width=400" alt="Nandhakumar Sekar" class="img-fluid">
+                                    <div class="avatar-particles"></div>
+                                    <div class="holographic-frame"></div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <h3>Quick Facts</h3>
+                                    <div class="fact-list">
+                                        <div class="fact-item">
+                                            <i class="fas fa-birthday-cake"></i>
+                                            <span>Born in Dharmapuri</span>
+                                        </div>
+                                        <div class="fact-item">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <span>Computer Science Graduate</span>
+                                        </div>
+                                        <div class="fact-item">
+                                            <i class="fas fa-code"></i>
+                                            <span>2+ Years Experience</span>
+                                        </div>
+                                        <div class="fact-item">
+                                            <i class="fas fa-heart"></i>
+                                            <span>Passionate Developer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="bio-text">
+                            <p class="breathing-text">
+                                I'm Nandhakumar Sekar, a passionate Web Developer from Dharmapuri, India. 
+                                With a strong foundation in Computer Science and hands-on experience in 
+                                full-stack development, I specialize in creating user-friendly applications 
+                                that solve real-world problems.
+                            </p>
+                            <p class="breathing-text">
+                                My journey in web development has been driven by curiosity and a desire to 
+                                continuously learn new technologies. I enjoy working with modern frameworks 
+                                and databases to build scalable and efficient web solutions.
+                            </p>
+                        </div>
+                        
+                        <div class="personal-info mt-4">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <span><strong>Name:</strong> Nandhakumar Sekar</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span><strong>Location:</strong> Dharmapuri, India</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span><strong>Email:</strong> nandhusekar2602@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span><strong>Phone:</strong> +91 9786220194</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="education-section mt-5">
+                <h3 class="section-subtitle text-center mb-5">Educational Journey</h3>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="rotating-card" onclick="rotateCard(this)">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2021 - 2025</div>
+                                        <h4>B.E (Computer Science)</h4>
+                                        <p><strong>Jayam College of Engineering and Technology</strong></p>
+                                        <p>Anna University | CGPA: 7.9</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h4>Key Subjects</h4>
+                                        <div class="timeline-skills">
+                                            <span class="skill-tag">Data Structures</span>
+                                            <span class="skill-tag">Algorithms</span>
+                                            <span class="skill-tag">Database Systems</span>
+                                            <span class="skill-tag">Software Engineering</span>
+                                            <span class="skill-tag">Web Technologies</span>
+                                            <span class="skill-tag">Computer Networks</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="rotating-card" onclick="rotateCard(this)">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="timeline-content">
+                                        <div class="timeline-date">2021</div>
+                                        <h4>Higher Secondary Certificate (HSC)</h4>
+                                        <p><strong>TSSG Hr Sec School, Papparapatti</strong></p>
+                                        <p>State Board | Percentage: 83.6%</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h4>Core Subjects</h4>
+                                        <div class="timeline-skills">
+                                            <span class="skill-tag">Mathematics</span>
+                                            <span class="skill-tag">Physics</span>
+                                            <span class="skill-tag">Chemistry</span>
+                                            <span class="skill-tag">Computer Science</span>
+                                            <span class="skill-tag">English</span>
+                                            <span class="skill-tag">Tamil</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests & Hobbies -->
+            <div class="interests-section mt-5">
+                <h3 class="section-subtitle text-center mb-5">Interests & Hobbies</h3>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="rotating-card" onclick="rotateCard(this)">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="interest-card">
+                                        <div class="interest-icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <h5>Coding</h5>
+                                        <p>Exploring new programming languages</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h5>Favorite Languages</h5>
+                                        <ul>
+                                            <li>JavaScript</li>
+                                            <li>PHP</li>
+                                            <li>Python</li>
+                                            <li>HTML/CSS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="rotating-card" onclick="rotateCard(this)">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="interest-card">
+                                        <div class="interest-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <h5>Mobile Apps</h5>
+                                        <p>Building innovative mobile applications</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h5>Technologies</h5>
+                                        <ul>
+                                            <li>React Native</li>
+                                            <li>Flutter</li>
+                                            <li>Progressive Web Apps</li>
+                                            <li>Hybrid Apps</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="rotating-card" onclick="rotateCard(this)">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="interest-card">
+                                        <div class="interest-icon">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <h5>AI & ML</h5>
+                                        <p>Learning about artificial intelligence</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h5>Areas of Interest</h5>
+                                        <ul>
+                                            <li>Machine Learning</li>
+                                            <li>Natural Language Processing</li>
+                                            <li>Computer Vision</li>
+                                            <li>Deep Learning</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="rotating-card" onclick="rotateCard(this)">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="interest-card">
+                                        <div class="interest-icon">
+                                            <i class="fas fa-gamepad"></i>
+                                        </div>
+                                        <h5>Gaming</h5>
+                                        <p>Playing strategy and puzzle games</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="card-back-content">
+                                        <h5>Favorite Genres</h5>
+                                        <ul>
+                                            <li>Strategy Games</li>
+                                            <li>Puzzle Games</li>
+                                            <li>RPG Games</li>
+                                            <li>Simulation Games</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
